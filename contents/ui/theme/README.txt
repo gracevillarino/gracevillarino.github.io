@@ -1,8 +1,9 @@
-=== Twenty Seventeen ===
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>=== Twenty Seventeen ===
 Contributors: the WordPress team
 Requires at least: WordPress 4.7
 Tested up to: WordPress 5.0-trunk
-Version: 1.6
+Version: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
@@ -15,11 +16,11 @@ For more information about Twenty Seventeen please go to https://codex.wordpress
 
 == Installation ==
 
-1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
+1. In your admin panel, go to Appearance -&gt; Themes and click the 'Add New' button.
 2. Type in Twenty Seventeen in the search form and press the 'Enter' key on your keyboard.
 3. Click on the 'Activate' button to use your new theme right away.
 4. Go to https://codex.wordpress.org/Twenty_Seventeen for a guide on how to customize this theme.
-5. Navigate to Appearance > Customize in your admin panel and customize to taste.
+5. Navigate to Appearance &gt; Customize in your admin panel and customize to taste.
 
 == Copyright ==
 
@@ -60,6 +61,11 @@ Source: https://unsplash.com/@englr?photo=bIhpiQA009k
 
 == Changelog ==
 
+= 1.7 =
+* Released: August 2, 2018
+
+https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.7
+
 = 1.6 =
 * Released: May 17, 2018
 
@@ -94,3 +100,4 @@ https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.1
 * Released: December 6, 2016
 
 Initial release
+</p></body></html>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en-US" class="no-js no-svg"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script><title>Page not found &ndash; gh manual wed</title><link rel="dns-prefetch" href="//fonts.googleapis.com"><link href="https://fonts.gstatic.com" crossorigin rel="preconnect"><link rel="stylesheet" id="twentyseventeen-fonts-css" href="https://fonts.googleapis.com/css?family=Libre+Franklin%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C800%2C800i&amp;subset=latin%2Clatin-ext" type="text/css" media="all"><link rel="stylesheet" id="twentyseventeen-style-css" href="contents/ui/theme/style.css" type="text/css" media="all"><!--[if lt IE 9]>
+<html lang="en-US" class="no-js no-svg"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script><title>Scheduling exports of your static site from WordPress &ndash; gh manual wed</title><link rel="dns-prefetch" href="//fonts.googleapis.com"><link href="https://fonts.gstatic.com" crossorigin rel="preconnect"><link rel="stylesheet" id="twentyseventeen-fonts-css" href="https://fonts.googleapis.com/css?family=Libre+Franklin%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C800%2C800i&amp;subset=latin%2Clatin-ext" type="text/css" media="all"><link rel="stylesheet" id="twentyseventeen-style-css" href="contents/ui/theme/style.css" type="text/css" media="all"><!--[if lt IE 9]>
 <link rel='stylesheet' id='twentyseventeen-ie8-css'  href='contents/ui/theme/assets/css/ie8.css' type='text/css' media='all' />
 <![endif]--><!--[if lt IE 9]>
 <script type='text/javascript' src='contents/ui/theme/assets/js/html5.js'></script>
-<![endif]--><script type="text/javascript" src="inc/js/jquery/jquery.js"></script><script type="text/javascript" src="inc/js/jquery/jquery-migrate.min.js"></script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head><body class="error404 hfeed has-header-image has-sidebar colors-light">
+<![endif]--><script type="text/javascript" src="inc/js/jquery/jquery.js"></script><script type="text/javascript" src="inc/js/jquery/jquery-migrate.min.js"></script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head><body class="post-template-default single single-post postid-9 single-format-standard has-header-image has-sidebar colors-light">
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#contentindex.html">Skip to content</a>
 
@@ -34,22 +34,58 @@
 
 <div class="wrap">
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main"><section class="error-404 not-found"><header class="page-header"><h1 class="page-title">Oops! That page can&rsquo;t be found.</h1>
-				</header><!-- .page-header --><div class="page-content">
-					<p>It looks like nothing was found at this location. Maybe try a search?</p>
+		<main id="main" class="site-main" role="main"><article id="post-9" class="post-9 post type-post status-publish format-standard hentry category-uncategorized"><header class="entry-header"><div class="entry-meta"><span class="posted-on"><span class="screen-reader-text">Posted on</span> <a href="2018/05/11/scheduling-exports-of-your-static-site-from-wordpress/index.html" rel="bookmark"><time class="entry-date published updated" datetime="2018-05-11T14:27:47+00:00">May 11, 2018</time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="author/admin/index.html">admin</a></span></span></div><!-- .entry-meta --><h1 class="entry-title">Scheduling exports of your static site from WordPress</h1>	</header><!-- .entry-header --><div class="entry-content">
+		<p>You can use the <a href="https://wordpress.org/plugins/wp-crontrol/index.html">WP Crontrol</a> plugin to schedule the export of your static site.</p>
+<p>This feature is yet to be released into the official version of <a href="http://wordpress.org/plugins/static-html-output-plugin/index.html">WP Static HTML Output Plugin</a>, but you can try it out by downloading the latest development version of the plugin from the <a href="http://github.com/leonstafford/wordpress-static-html-pluginindex.html">GitHub repository</a>.</p>
+<h2>Scheduling your WordPress site to be exported as a static HTML site</h2>
+<ol><li>Install the&nbsp;<a href="https://wordpress.org/plugins/wp-crontrol/index.html">WP Crontrol</a> plugin.</li>
+<li>Go to your Cron Schedules via Settings &gt; Cron Schedules<br><a href="contents/data/go_to_cron_schedules.pngindex.html"><img class="alignnone wp-image-11 size-full" src="contents/data/go_to_cron_schedules.png" alt="" width="406" height="375"></a></li>
+<li>Add a new Cron Schedule, using WP Static HTML Output&rsquo;s custom hook, setting the following options:
+<ol><li><strong> Internal name:</strong> <em>wp_static_html_output_server_side_export_hook</em></li>
+<li><strong>Interval (seconds):</strong> ie&nbsp;<em>3600</em> to run your export every hour,&nbsp;<em>86400</em> for daily exports, etc</li>
+<li><strong>Display name:</strong> This can be whatever you like. Something that makes sense to you is recommended, ie &ldquo;<em>Static site export to S3 once a day</em>&rdquo;&nbsp;<a style="font-size: 1rem;" href="contents/data/wpcrontrol_add_scheduled_task.pngindex.html"><img class="alignnone wp-image-8" src="contents/data/wpcrontrol_add_scheduled_task-1024x545.png" alt="" width="800" height="426"></a></li>
+</ol></li>
+<li>Click on Add Cron Schedule to save your scheduled task. It should now appear in your list of tasks, as below:&nbsp;<a style="font-size: 1rem;" href="contents/data/wp_crontrol_added_task.pngindex.html"><img class="alignnone wp-image-7" src="contents/data/wp_crontrol_added_task-1024x490.png" alt="" width="800" height="383"></a></li>
+</ol><p>&nbsp;</p>
+	</div><!-- .entry-content -->
 
-					
+	
+</article><!-- #post-## --><div id="comments" class="comments-area">
 
-<form role="search" method="get" class="search-form" action="">
-	<label for="search-form-5b7cdd95db11c">
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2018/05/11/scheduling-exports-of-your-static-site-from-wordpress/#respondindex.html" style="display:none;">Cancel reply</a></small></h3>			<form action="wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"><input type="hidden" name="comment_post_ID" value="9" id="comment_post_ID"><input type="hidden" name="comment_parent" id="comment_parent" value="0"></p>			</form>
+			</div><!-- #respond -->
+	
+</div><!-- #comments -->
+
+	<nav class="navigation post-navigation" role="navigation"><h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="2018/04/28/removing-comments-for-a-wordpress-static-website/index.html" rel="prev"><span class="screen-reader-text">Previous Post</span><span aria-hidden="true" class="nav-subtitle">Previous</span> <span class="nav-title"><span class="nav-title-icon-wrapper"><svg class="icon icon-arrow-left" aria-hidden="true" role="img"><use href="#icon-arrow-left" xlink:href="#icon-arrow-left"></use></svg></span>Removing comments for a WordPress static website</span></a></div></div>
+	</nav></main><!-- #main --></div><!-- #primary -->
+	
+<aside id="secondary" class="widget-area" role="complementary" aria-label="Blog Sidebar"><section id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="">
+	<label for="search-form-5b7cdd96ad04b">
 		<span class="screen-reader-text">Search for:</span>
 	</label>
-	<input type="search" id="search-form-5b7cdd95db11c" class="search-field" placeholder="Search &hellip;" value="" name="s"><button type="submit" class="search-submit"><svg class="icon icon-search" aria-hidden="true" role="img"><use href="#icon-search" xlink:href="#icon-search"></use></svg><span class="screen-reader-text">Search</span></button>
+	<input type="search" id="search-form-5b7cdd96ad04b" class="search-field" placeholder="Search &hellip;" value="" name="s"><button type="submit" class="search-submit"><svg class="icon icon-search" aria-hidden="true" role="img"><use href="#icon-search" xlink:href="#icon-search"></use></svg><span class="screen-reader-text">Search</span></button>
 </form>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 --></main><!-- #main --></div><!-- #primary -->
-</div><!-- .wrap -->
+</section><section id="recent-posts-2" class="widget widget_recent_entries"><h2 class="widget-title">Recent Posts</h2>		<ul><li>
+					<a href="2018/05/11/scheduling-exports-of-your-static-site-from-wordpress/index.html">Scheduling exports of your static site from WordPress</a>
+									</li>
+											<li>
+					<a href="2018/04/28/removing-comments-for-a-wordpress-static-website/index.html">Removing comments for a WordPress static website</a>
+									</li>
+					</ul></section><section id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widget-title">Recent Comments</h2><ul id="recentcomments"></ul></section><section id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul><li><a href="2018/05/index.html">May 2018</a></li>
+	<li><a href="2018/04/index.html">April 2018</a></li>
+		</ul></section><section id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul><li class="cat-item cat-item-1"><a href="category/uncategorized/index.html">Uncategorized</a>
+</li>
+		</ul></section><section id="meta-2" class="widget widget_meta"><h2 class="widget-title">Meta</h2>			<ul><li><a href="wp-login.phpindex.html">Log in</a></li>
+			<li><a href="feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/index.html" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul></section></aside><!-- #secondary --></div><!-- .wrap -->
 
 
 		</div><!-- #content -->

@@ -1,5 +1,5 @@
-
-body {
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>body {
 font-size: 16px;
 }
 h1 {
@@ -121,9 +121,9 @@ font-weight: 700;
 letter-spacing: 0.14em;
 text-transform: uppercase;
 }
-.blog .site-main > article,
-.archive .site-main > article,
-.search .site-main > article {
+.blog .site-main &gt; article,
+.archive .site-main &gt; article,
+.search .site-main &gt; article {
 padding-bottom: 4em;
 }
 time.updated {
@@ -167,3 +167,4 @@ padding-right: 0;
 padding-left: 0;
 padding-right: 2em;
 }
+</p></body></html>
